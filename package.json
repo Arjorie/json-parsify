@@ -1,0 +1,29 @@
+{
+  "name": "json-parsify",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "14 || 16 || 17 || 18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "json",
+    "parse",
+    "safe"
+  ],
+  "author": "Arjorie Sotelo <arjoriesotelo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
