@@ -1,10 +1,11 @@
-export const safeJsonParse = (str: string = '', defaultVal: any = null): any => {
-    let parseJson: any;
+export const jsonParsify = (str: string | null | undefined, defaultVal: any = null): any => {
+    let parsedJson: any;
+    if (typeof str !== 'string' || str === '') return defaultVal;
     try {
-        parseJson = JSON.parse(str);
+        parsedJson = JSON.parse(str);
     } catch (err: any) {
-        console.warn(err?.message);
-        parseJson = defaultVal;
+        console.error(err?.message);
+        parsedJson = defaultVal;
     }
-    return parseJson;
+    return parsedJson;
 }

@@ -1,6 +1,6 @@
 {
   "name": "json-parsify",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,6 +18,11 @@
     "parse",
     "safe"
   ],
+  "homepage": "https://github.com/Arjorie/json-parsify/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arjorie/json-parsify"
+  },
   "author": "Arjorie Sotelo <arjoriesotelo@gmail.com>",
   "license": "ISC",
   "dependencies": {
